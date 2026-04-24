@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobotomy Corporation 初心者向けガイド | 管理人ポータル</title>
+    <meta name="description" content="Lobotomy Corporationの基本システムを解説する初心者向けガイド。アブノーマリティの管理、職員の育成、E.G.O装備、クリフォト暴走について学びましょう。">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="scanline"></div>
+    <div class="noise"></div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="abnormality_list.html">アブノーマリティ</a>
+                    <ul class="dropdown">
+                        <li><a href="abnormality_list.html#zayin">ZAYIN</a></li>
+                        <li><a href="abnormality_list.html#teth">TETH</a></li>
+                        <li><a href="abnormality_list.html#he">HE</a></li>
+                        <li><a href="abnormality_list.html#waw">WAW</a></li>
+                        <li><a href="abnormality_list.html#aleph">ALEPH</a></li>
+                        <li><a href="tool_list.html">ツール型 (Tool)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="ego_list.html">E.G.O</a>
+                    <ul class="dropdown">
+                        <li class="has-submenu">
+                            <a href="ego_list.html">武器 (Weapon)</a>
+                            <ul class="submenu">
+                                <li><a href="ego_list.html#zayin">ZAYIN</a></li>
+                                <li><a href="ego_list.html#teth">TETH</a></li>
+                                <li><a href="ego_list.html#he">HE</a></li>
+                                <li><a href="ego_list.html#waw">WAW</a></li>
+                                <li><a href="ego_list.html#aleph">ALEPH</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="ego_list.html">防具 (Armor)</a>
+                            <ul class="submenu">
+                                <li><a href="ego_list.html#zayin">ZAYIN</a></li>
+                                <li><a href="ego_list.html#teth">TETH</a></li>
+                                <li><a href="ego_list.html#he">HE</a></li>
+                                <li><a href="ego_list.html#waw">WAW</a></li>
+                                <li><a href="ego_list.html#aleph">ALEPH</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ego_list.html#gift">ギフト (Gift)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="story.html">ストーリー・関連作</a></li>
+                <li class="nav-item"><a href="ordeals.html">試練</a></li>
+                <li class="nav-item"><a href="suppression.html">コア抑制</a></li>
+                <li class="nav-item"><a href="mods.html">MOD</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-overlay"></div>
+        <h1 class="reveal">Lobotomy Corporation</h1>
+        <p class="reveal">Beginner's Management Protocol | version 1.0.4</p>
+    </header>
+
+    <main class="container">
+        <!-- 1. ゲームの目的とクリア条件 -->
+        <section id="objective">
+            <h2 class="section-title reveal">01. ゲームの目的</h2>
+            <div class="grid-2">
+                <div class="card reveal">
+                    <h3>管理人の使命</h3>
+                    <p>プレイヤーは管理人となり、「アブノーマリティ」と呼ばれる異常存在たちを管理（お世話）してエネルギーを生産します。</p>
+                </div>
+                <div class="card reveal">
+                    <h3>クリア条件</h3>
+                    <p>1日に定められたノルマのエネルギーを生産できればその日はクリアとなります。最終的に<strong>50日目をクリアすること</strong>がトゥルーエンドへの道です。</p>
+                    <div class="meter-container">
+                        <div class="meter-label"><span>ENERGY PRODUCTION</span><span>100%</span></div>
+                        <div class="meter-bar"><div class="meter-fill fill-hp" style="width: 100%;"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card reveal" style="margin-top: 2rem; border-color: var(--color-red);">
+                <p><strong>WARNING:</strong> エネルギーが溜まり切る前に職員が全滅してしまうと、即座にゲームオーバーとなります。</p>
+            </div>
+        </section>
+
+        <!-- 2. 職員のステータスと4つの作業 -->
+        <section id="staff">
+            <h2 class="section-title reveal">02. 職員ステータスと作業</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-secondary);">職員には4つのステータスがあり、それぞれランク1〜5まで成長します。各作業はステータスの成長に直結します。</p>
+            <div class="grid-4">
+                <div class="card reveal">
+                    <span class="attr-tag tag-red">本能 (Instinct)</span>
+                    <h3>勇気</h3>
+                    <p>最大HP（体力）に影響します。肉体的な強靭さを表します。</p>
+                    <div class="meter-container">
+                        <div class="meter-bar"><div class="meter-fill fill-hp" data-width="85%"></div></div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <span class="attr-tag tag-white">洞察 (Insight)</span>
+                    <h3>慎重</h3>
+                    <p>最大SP（精神力）に影響します。精神的な耐久力を表します。</p>
+                    <div class="meter-container">
+                        <div class="meter-bar"><div class="meter-fill fill-sp" data-width="70%"></div></div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <span class="attr-tag tag-black">愛着 (Attachment)</span>
+                    <h3>自制</h3>
+                    <p>作業の成功率と速度に影響します。感情のコントロール力を表します。</p>
+                </div>
+                <div class="card reveal">
+                    <span class="attr-tag tag-pale">抑圧 (Repression)</span>
+                    <h3>正義</h3>
+                    <p>移動速度と攻撃速度に影響します。規律と判断力を表します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. E.G.O（装備）と4つの属性 -->
+        <section id="ego">
+            <h2 class="section-title reveal">03. E.G.O と属性システム</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-secondary);">獲得したPEボックスを消費し、アブノーマリティの情報を開示、あるいは強力な装備「E.G.O」を抽出します。</p>
+            <div class="grid-4">
+                <div class="card card-attr red reveal">
+                    <h3>RED</h3>
+                    <p><strong>物理属性</strong><br>HPに直接ダメージを与えます。</p>
+                </div>
+                <div class="card card-attr white reveal">
+                    <h3>WHITE</h3>
+                    <p><strong>精神汚染</strong><br>SPにダメージを与えます。</p>
+                </div>
+                <div class="card card-attr black reveal">
+                    <h3>BLACK</h3>
+                    <p><strong>侵食</strong><br>HPとSPの両方にダメージを与えます。</p>
+                </div>
+                <div class="card card-attr pale reveal">
+                    <h3>PALE</h3>
+                    <p><strong>死</strong><br>最大HPに対する割合ダメージ。非常に危険です。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 職員のパニック -->
+        <section id="panic">
+            <h2 class="section-title reveal">04. 職員の精神崩壊 (PANIC)</h2>
+            <div class="grid-2">
+                <div class="card reveal">
+                    <h3>パニックの発生</h3>
+                    <p>SPが0になると、職員はパニック状態に陥り制御不能になります。パニック時の行動は最も高いステータスに依存します。</p>
+                    <ul style="margin-top: 1rem; list-style: none; color: var(--text-secondary);">
+                        <li>・殺人 (勇気)</li>
+                        <li>・徘徊 (慎重)</li>
+                        <li>・自殺 (正義)</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>鎮圧と救出</h3>
+                    <p>パニックになった職員は、<strong>WHITEまたはBLACK属性の武器で攻撃</strong>することでSPを回復させ、正気に戻すことができます。</p>
+                    <div class="meter-container">
+                        <div class="meter-label"><span>MENTAL STABILITY</span><span>RECOVERING...</span></div>
+                        <div class="meter-bar"><div class="meter-fill fill-sp" data-width="40%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. クリフォト暴走と試練 -->
+        <section id="meltdown">
+            <h2 class="section-title reveal">05. クリフォト暴走と試練</h2>
+            <div class="grid-2">
+                <div class="card reveal" style="border-left: 4px solid var(--accent-color);">
+                    <h3>クリフォト暴走</h3>
+                    <p>作業を繰り返すとゲージが溜まり、ランダムな収容室で暴走が発生します。時間内に対処しないとエネルギー減少や脱走を招きます。</p>
+                </div>
+                <div class="card reveal" style="background: rgba(255, 100, 100, 0.05); border-color: var(--color-red);">
+                    <h3>試練 (ORDEALS)</h3>
+                    <p>特定の暴走段階で出現する敵対存在。黎明、白昼、夕暮れ、深夜の4段階があり、時間が経つほど脅威が増します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. チェックポイント機能 -->
+        <section id="checkpoint" style="border-bottom: none;">
+            <h2 class="section-title reveal">06. 継続と記憶引継ぎ</h2>
+            <div class="card reveal">
+                <h3>記憶の貯蔵庫 (Memory Repository)</h3>
+                <p>5日ごとに「チェックポイント」が設定されます。壊滅的な被害が出た場合でも、<strong>獲得した情報やE.G.Oを引き継いだまま</strong>、前のチェックポイントや1日目に戻ることができます。</p>
+                <p style="margin-top: 1rem; color: var(--accent-color); font-family: var(--font-mono);">SYSTEM: RETURNING TO PREVIOUS REPOSITORY... SUCCESS</p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 4rem; text-align: center; color: var(--text-secondary); border-top: 1px solid var(--glass-border);">
+        <p>&copy; Lobotomy Corporation Wiki - Management Support Division</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
