@@ -64,95 +64,398 @@
         
         <section id="zayin">
             <h2 class="risk-header zayin reveal">ZAYIN</h2>
-            <div class="grid-4">
-                <div class="card reveal"><h3>たった一つの罪と何百もの善</h3><p>O-03-03</p></div>
-                <div class="card reveal"><h3>蓋の空いたウェルチアース</h3><p>F-05-32</p></div>
-                <div class="card reveal"><h3>お前、ハゲだよ…</h3><p>F-02-58</p></div>
-                <div class="card reveal"><h3>妖精の祭典</h3><p>F-04-42</p></div>
-                <div class="card reveal"><h3>黒の兵隊</h3><p>D-01-105</p></div>
+            <p class="reveal" style="color: var(--text-secondary); margin-bottom: 2rem;">最も危険度が低いクラスですが、「条件を満たすと即死する初見殺しの罠」や「表記だけZAYINの実質ALEPH（最高危険度）」が混ざっているため、油断できないクラスでもあります。</p>
+            <div class="grid-2">
+                <div class="card reveal">
+                    <h3>たった一つの罪と何百もの善</h3>
+                    <p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-03-03</p>
+                    <p>ゲーム開始時に必ず収容される、ZAYIN屈指の癒やし枠です。</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--accent-color);">管理の罠と注意点:</strong> 害は一切ありません。作業で「告白」を聞くことで職員の精神力を回復してくれる能力を持ちます。</li>
+                        <li><strong style="color: var(--text-primary);">武器「懺悔」 (ZAYIN):</strong> <span class="attr-text-white">白</span> / メイス系近接武器。低確率でSPを回復。序盤のパニック治療に役立ちますが、射程が短く逃げ回る職員を追うのにはやや不向きです。</li>
+                        <li><strong style="color: var(--text-primary);">防具「懺悔」 (ZAYIN):</strong> PALE以外の属性に少し耐性を持ちます。初期装備のスーツよりは確実に強いため、序盤は重宝します。</li>
+                        <li><strong style="color: var(--text-primary);">ギフト:</strong> 精神力と作業成功率を上げます。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>妖精の祭典</h3>
+                    <p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-04-42</p>
+                    <p>可愛らしい妖精ですが、ルールを破ると残酷な本性を現します。</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 作業を終え妖精が取り憑いている（回復効果が続いている）状態で他のアブノーマリティの作業室に入ると、<strong>即座に妖精に捕食されて即死</strong>します。連続指示を出す際に事故が起きやすい罠です。</li>
+                        <li><strong style="color: var(--text-primary);">武器「ウィングビート」 (ZAYIN):</strong> <span class="attr-text-white">白</span> / メイス系近接武器。性能は「懺悔」とほぼ同じで標準的です。</li>
+                        <li><strong style="color: var(--text-primary);">防具「ウィングビート」 (ZAYIN):</strong> BLACK属性以外に耐性を持ち、ZAYIN防具の中では比較的優秀です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>蓋の空いたウェルチアース</h3>
+                    <p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-05-32</p>
+                    <p>自販機とエビが合体したような奇妙な存在です。</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 作業結果が「良い」「普通」ならジュースで回復しますが、<strong>「悪い」になると職員が漁船に連れ去られて即死（行方不明）</strong>します。高レベル職員でも「悪い」を引くことがあり、事故率が高いです。</li>
+                        <li><strong style="color: var(--text-primary);">武器「ソーダ」 (ZAYIN):</strong> <span class="attr-text-red">赤</span> / 拳銃系遠距離武器。DPSは全武器中最低クラスですが、<strong>序盤において「被弾リスクの低い遠距離武器」というだけで非常に価値があります</strong>。</li>
+                        <li><strong style="color: var(--text-primary);">防具「ソーダ」 (ZAYIN):</strong> RED属性に少し耐性を持ちます。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>お前、ハゲだよ…</h3>
+                    <p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-02-58</p>
+                    <p>名前も能力もネタに振り切った存在です。</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--accent-color);">管理の罠と注意点:</strong> 髪の毛がある職員が作業すると、強制的にハゲにされます（実害なし）。同日に2人ハゲにされると、収容部門の全職員の髪の毛が消滅します。</li>
+                        <li><strong style="color: var(--text-primary);">武器「タフ」 (TETHに格上げ):</strong> <span class="attr-text-white">白</span> / 拳銃系。ZAYIN抽出ながらTETH格上げで拳銃最高火力ですが、<strong>ハゲの職員しか装備できない</strong>という致命的な欠点があります。</li>
+                        <li><strong style="color: var(--text-primary);">防具「タフ」 (ZAYIN):</strong> BLACK属性に少し耐性を持ちます。こちらもハゲ専用です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05); grid-column: 1 / -1;">
+                    <span class="attr-tag tag-red">WARNING: 実質ALEPH</span>
+                    <h3>黒の兵隊</h3>
+                    <p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">D-01-105</p>
+                    <p><strong>表記はZAYINですが、中身は完全にALEPH（最高危険度）の詐欺アブノーマリティです。</strong></p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 作業ダメージが「WHITE 7〜9」とALEPHクラスで低ランク職員は一瞬でパニックになります。施設内で職員/オフィサーが5名死亡するたびにカウンターが減少。脱走するとメインルームで自爆し、全部門のカウンターを1減らす施設崩壊の引き金になります。ZAYIN判定のため作業してもステータスは育ちません。</li>
+                        <li><strong style="color: var(--text-primary);">武器「ピンク」 (ALEPHに格上げ):</strong> <span class="attr-text-white">白</span> / 長距離狙撃銃。射程は長いですが、<strong>射撃前に伏せる前隙モーションが異常に長く、動き回る敵に攻撃が当たりにくい</strong>弱点があります。</li>
+                        <li><strong style="color: var(--text-primary);">防具「ピンク」 (ALEPHに格上げ):</strong> RED、WHITE、BLACK耐性が0.4前後と高水準でまとまった、非常に優秀なALEPH防具です。</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="teth">
             <h2 class="risk-header teth reveal">TETH</h2>
+            <p class="reveal" style="color: var(--text-secondary); margin-bottom: 2rem;">ZAYINから一歩進み、管理方法を間違えると職員が容易に死亡したり、脱走して施設に被害をもたらすようになる危険度です。しかし抽出できるE.G.Oの性能も大きく向上しています。</p>
+            
+            <h3 class="reveal" style="margin-bottom: 1rem; color: var(--accent-color);">要注意・初見殺しギミック</h3>
+            <div class="grid-2" style="margin-bottom: 2rem;">
+                <div class="card reveal">
+                    <h3>血の風呂</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">T-05-41</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 「勇気ランク1」の職員が作業すると、湯船に引きずり込まれて即死します。勇気ランク2以上の職員であれば無害です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>母なるクモ</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">T-02-43</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 蜘蛛の巣が張られた部屋を掃除しようとする「洞察作業」を行うと、繭にされて即死します。洞察作業さえ避ければ優秀なレベリング要員です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>美女と野獣</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-01-57</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 「抑圧作業」を2回連続で行うと、その職員が新たな美女と野獣へと変異（即死）してしまいます。抑圧とそれ以外の作業を交互に行う必要があります。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>壊れゆく甲冑</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-05-61</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 抑圧作業を行うと正義ステータスが上昇するギフトをもらえますが、このオーラを持った職員が「愛着作業」を行うと、打ち首にされて即死します。</li>
+                        <li><strong style="color: var(--text-primary);">武器「決死の一生」 (HEに格上げ):</strong> <span class="attr-text-pale">ペイル</span> / 近接武器。非常に希少なペイル属性（最大HPに対する割合ダメージ）を持ち、中盤以降も長く使える名刀です。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="reveal" style="margin-bottom: 1rem; color: var(--accent-color);">優秀なE.G.O・要注意バグ</h3>
+            <div class="grid-2" style="margin-bottom: 2rem;">
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">WARNING: 睡眠バグ</span>
+                    <h3>空虚な夢</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">T-02-71</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">致命的バグ:</strong> 脱走時に放つ範囲睡眠の光線を受けた職員が、「クリックしても起きない、または制御不能が解除されない」というバグが頻発します。このまま1日を終えると死亡扱いになるため、絶対に脱走させてはいけない死神です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">WARNING: 反射事故</span>
+                    <h3>罰鳥</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-02-56</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 脱走時の被害は小さいですが、こちらから攻撃（反撃）すると1000の即死ダメージを与えてきます。「ブラックスワン」などの自動反撃ダメージ装備をしていると、勝手に怒らせてカウンターで即死する理不尽事故が起きます。</li>
+                        <li><strong style="color: var(--text-primary);">武器「くちばし」:</strong> <span class="attr-text-red">赤</span> / 拳銃。TETH拳銃三銃士の1つ。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">WARNING: ダメージ不発バグ</span>
+                    <h3>キュートちゃん</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-02-70</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">武器の罠:</strong> 武器「可愛い」は本来1振りで2回攻撃する設定ですが、バグのため攻撃判定が1回しか発生しません。DPSが初期装備「警棒」と完全に一致するTETH最弱の罠武器です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>捨てられた殺人者</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">T-01-31</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--text-primary);">武器「後悔」:</strong> <span class="attr-text-black">黒</span> / ハンマー。攻撃速度は遅いものの、TETH近接武器の中で最高クラスのDPSを誇り、範囲攻撃特性を持つため集団戦で頼りになります。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>マッチガール</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-01-02</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--text-primary);">武器「4本目のマッチの火」:</strong> <span class="attr-text-red">赤</span> / キャノン。遠距離からの単発高火力と、射線上の敵全てに当たる範囲攻撃（貫通）特性を持ちます。TETH遠距離武器でぶっちぎりのDPS1位です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>壁に向かう女</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-01-18</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--text-primary);">武器「悲鳴」 (HEに格上げ):</strong> <span class="attr-text-white">白</span> / クロスボウ。貫通能力を持つ優秀な武器。説明文には「勇気と慎重が3未満だとMP減少」とありますが、<strong>バグのためデメリットが機能していません</strong>。低ステータス職員でもノーリスクで扱えます。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>オールドレディ</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-01-04</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--text-primary);">武器「孤独」:</strong> <span class="attr-text-white">白</span> / 拳銃。TETH拳銃三銃士の1つ。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>今日は恥ずかしがり屋</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-01-12</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--text-primary);">武器「今日の表情」:</strong> <span class="attr-text-white">白</span> / 拳銃。TETH拳銃三銃士の1つ。これら拳銃武器は攻撃の出が早く、正義ステータスが低い序盤の職員でも安定して扱いやすいのが特徴です。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="reveal" style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 1.2rem;">その他のTETHアブノーマリティ</h3>
             <div class="grid-4">
                 <div class="card reveal"><h3>赤い靴</h3><p>O-04-08</p></div>
-                <div class="card reveal"><h3>血の風呂</h3><p>T-05-41</p></div>
-                <div class="card reveal"><h3>捨てられた殺人者</h3><p>T-01-31</p></div>
-                <div class="card reveal"><h3>罰鳥</h3><p>O-02-56</p></div>
                 <div class="card reveal"><h3>宇宙の欠片</h3><p>O-03-60</p></div>
-                <div class="card reveal"><h3>壊れゆく甲冑</h3><p>O-05-61</p></div>
                 <div class="card reveal"><h3>肉の灯籠</h3><p>O-04-12</p></div>
-                <div class="card reveal"><h3>今日は恥ずかしがり屋</h3><p>O-01-12</p></div>
-                <div class="card reveal"><h3>空虚な夢</h3><p>T-02-71</p></div>
                 <div class="card reveal"><h3>墓穴の桜</h3><p>O-04-100</p></div>
-                <div class="card reveal"><h3>キュートちゃん</h3><p>F-02-70</p></div>
-                <div class="card reveal"><h3>美女と野獣</h3><p>F-01-57</p></div>
-                <div class="card reveal"><h3>母なるクモ</h3><p>T-02-43</p></div>
                 <div class="card reveal"><h3>1.76MHz</h3><p>T-06-27</p></div>
-                <div class="card reveal"><h3>壁に向かう女</h3><p>F-01-18</p></div>
-                <div class="card reveal"><h3>オールドレディ</h3><p>O-01-04</p></div>
-                <div class="card reveal"><h3>マッチガール</h3><p>F-01-02</p></div>
             </div>
         </section>
 
         <section id="he">
             <h2 class="risk-header he reveal">HE</h2>
+            <p class="reveal" style="color: var(--text-secondary); margin-bottom: 2rem;">ゲーム中盤の主力となり、職員の育成に欠かせない存在ですが、ステータス条件による「即死ギミック」を持つものが多く、初見殺しの地雷（害悪）アブノーマリティが多く混ざっているのが特徴です。</p>
+
+            <h3 class="reveal" style="margin-bottom: 1rem; color: var(--color-red);">初見殺し！HEの「害悪」アブノーマリティ</h3>
+            <div class="grid-2" style="margin-bottom: 2rem;">
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">キング・オブ・害悪</span>
+                    <h3>無名の胎児</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-01-15</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> カウンターが1しかなく、鳴き出すと同部門にWHITEダメージを与え続け、さらに<strong>他のアブノーマリティのカウンターまで下げてしまう</strong>連鎖脱走の引き金になります。鳴き止ませるにはルーレットで職員を1人犠牲にする必要があり、非常に不人気です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">収容メリットなし</span>
+                    <h3>暖かい心の木こり</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-05-52</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 「自制が3以上」の職員が作業すると脱走し、職員を即死させて心臓を奪います。自制は作業成功率に関わる重要なステータスですが、それが高いと制限に引っかかる最悪の噛み合い方をしており、E.G.Oも平凡なため収容メリットがありません。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">連鎖パニック注意</span>
+                    <h3>歌う機械</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-05-30</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 「勇気4以上」または「自制2以下」の職員が作業すると機械に飛び込んで即死。音楽で他の職員を魅了し、別の職員を気絶させて機械に放り込もうとするため施設が壊滅します。ただし条件を守れば勇気育成に有効です。</li>
+                        <li><strong style="color: var(--text-primary);">武器「ハーモニー」:</strong> <span class="attr-text-black">黒</span> / グラインダー。HP消費リスクがありますが、<strong>火力が1.3倍になり、HE遠距離武器で圧倒的トップのDPS</strong>を出します。回復手段と組み合わせると強力です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">脳吸い</span>
+                    <h3>知恵を欲する案山子</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-01-87</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠と注意点:</strong> 「慎重が3以上」の職員が作業を終えると脱走し、倒した職員の脳を吸って回復します。脱走しても近接攻撃しかできず足も遅いため鎮圧は容易。慎重育成要員としては優秀です。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="reveal" style="margin-bottom: 1rem; color: var(--accent-color);">育成に役立つ優良・要注意バグ</h3>
+            <div class="grid-2" style="margin-bottom: 2rem;">
+                <div class="card reveal">
+                    <h3>雪の女王</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-01-37</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--accent-color);">育成のコツ:</strong> 機嫌が悪くなっても職員を氷漬けにするだけで、別の職員が「決闘」に勝利すれば救出可能。脱走せず、救出すると強力なギフトがもらえる優良物件です。</li>
+                        <li><strong style="color: var(--color-red);">バグ情報:</strong> 武器「氷のかけら」の鈍足効果は、<strong>試練などの敵には全く効果がないバグ</strong>を抱えています（ビナー等の特定のボスには機能します）。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>レティシア</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-01-67</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--accent-color);">育成のコツ:</strong> 作業結果「普通」で渡されるプレゼントを持ったまま他の作業に向かうと爆死。専属の職員を決めれば事故は起きず、全ステータスの育成に優秀です。</li>
+                        <li><strong style="color: var(--text-primary);">武器「レティシア」:</strong> <span class="attr-text-black">黒</span> / 拳銃。拳銃系武器の上位互換で、射程・攻撃速度・正義補正が乗り、汎用性の高い名銃です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>ポーキュバス</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-02-98</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--accent-color);">育成のコツ:</strong> 「自制が低い」職員が良い結果を出すと頭が爆発。自制の高い職員で作業すればノーリスクで勇気育成が可能。脱走時は<strong>遠距離攻撃を完全無効化</strong>しますが、近接で簡単に鎮圧できます。</li>
+                        <li><strong style="color: var(--color-red);">バグ情報:</strong> 武器「喜び」は2回攻撃モーションですが、<strong>攻撃判定が1回しか発生しません</strong>。特殊能力のWHITEスリップダメージも試練等に効かないため、DPSが全武器中最強クラスの罠武器です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>シャーデンフロイデ</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-05-76</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--accent-color);">育成のコツ:</strong> 「画面の視界に入れる」とカウンター減少。脱走時も、<strong>画面に映さなければ一切行動を停止する（サンドバッグになる）</strong>ため、カメラを外して鎮圧指示を出すだけで簡単にノーダメージで倒せます。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>オールアラウンドヘルパー</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">T-05-51</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--text-primary);">武器「グラインダーMk4」:</strong> <span class="attr-text-red">赤</span> / 丸ノコ。前隙・後隙が短く多段ヒットで高火力。正義の補正も乗るため、HE近接武器の中で最強格の使いやすさと火力を誇ります。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="reveal" style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 1.2rem;">その他のHEアブノーマリティ</h3>
             <div class="grid-4">
-                <div class="card reveal"><h3>暖かい心の木こり</h3><p>F-05-52</p></div>
                 <div class="card reveal"><h3>幸せなテディ</h3><p>T-04-06</p></div>
-                <div class="card reveal"><h3>無名の胎児</h3><p>O-01-15</p></div>
-                <div class="card reveal"><h3>歌う機械</h3><p>O-05-30</p></div>
-                <div class="card reveal"><h3>雪の女王</h3><p>F-01-37</p></div>
-                <div class="card reveal"><h3>オールアラウンドヘルパー</h3><p>T-05-51</p></div>
-                <div class="card reveal"><h3>そりのルドル・タ</h3><td>F-02-49</td></div>
+                <div class="card reveal"><h3>そりのルドル・タ</h3><p>F-02-49</p></div>
                 <div class="card reveal"><h3>銀河の子</h3><p>O-01-55</p></div>
-                <div class="card reveal"><h3>レティシア</h3><p>O-01-67</p></div>
                 <div class="card reveal"><h3>死んだ蝶の葬儀</h3><p>T-01-68</p></div>
                 <div class="card reveal"><h3>魔弾の射手</h3><p>F-01-69</p></div>
-                <div class="card reveal"><h3>シャーデンフロイデ</h3><p>O-05-76</p></div>
-                <div class="card reveal"><h3>知恵を欲する案山子</h3><p>F-01-87</p></div>
-                <div class="card reveal"><h3>ポーキュバス</h3><p>O-02-98</p></div>
             </div>
         </section>
 
         <section id="waw">
             <h2 class="risk-header waw reveal">WAW</h2>
+            <p class="reveal" style="color: var(--text-secondary); margin-bottom: 2rem;">ゲーム中盤から終盤の主戦力となる強力な装備が手に入る反面、施設崩壊の直接的な原因となる危険な怪物たちが揃っています。</p>
+
+            <h3 class="reveal" style="margin-bottom: 1rem; color: var(--accent-color);">特に要注意・特徴的なアブノーマリティ</h3>
+            <div class="grid-2" style="margin-bottom: 2rem;">
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">WARNING: 実質ALEPH</span>
+                    <h3>憎しみの女王</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-01-04</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠:</strong> 平和すぎるとヒステリーを起こします。暴走が進む間に施設内で3人死亡しないと脱走し、極太ビームで施設を焼き払うため、処刑弾で定期的にオフィサーを間引く管理が必須です。</li>
+                        <li><strong style="color: var(--text-primary);">武器「愛と憎しみの名のもとに」:</strong> 4属性ランダムの弾を放つ超長射程魔法杖。軌道上の味方を回復させる効果もあり後方支援として優秀です。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <span class="attr-tag" style="background: #4caf50;">人類の味方枠</span>
+                    <h3>絶望の騎士</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-01-73</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--accent-color);">管理の罠:</strong> 「加護（PALE以外の被ダメ半減）」を受けた職員が死亡すると絶望して脱走します。逆に言えば<strong>加護対象が死なない限り絶対に脱走しない</strong>ため、エース職員に付与すれば非常に安全です。</li>
+                        <li><strong style="color: var(--text-primary);">防具「鋭利な涙の剣」:</strong> WAWでありながら貴重な「PALE耐性」を持ち、WAW最強クラスの性能を誇ります。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">WARNING: ダイレクトアタック</span>
+                    <h3>白雪姫のりんご</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">F-04-83</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠:</strong> 脱走時のツルは移動低下とスリップダメージを与えますが、最も恐ろしいのは<strong>PCのメモリを異常消費しフリーズさせる危険性</strong>がある点です。絶対に脱走させてはいけません。</li>
+                        <li><strong style="color: var(--text-primary);">武器「緑の幹」:</strong> <span class="attr-text-black">黒</span> / 槍。同名ギフト装備で火力が上がり、近接トップクラスのDPSを出します。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>大鳥</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-02-40</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠:</strong> 施設内で5人死亡でカウンター減少。脱走時は停電させ、魅了した職員を即死させます。魅了された職員を他部門へ逃がすことで回避可能です。</li>
+                        <li><strong style="color: var(--text-primary);">武器「ランプ」:</strong> <span class="attr-text-black">黒</span> / ハンマー。敵の被ダメージを1.5倍にするデバフを付与し、集団鎮圧時の部隊火力を底上げします。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <span class="attr-tag tag-red">装備ALEPH格上げ</span>
+                    <h3>審判鳥 / 貪欲の王</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-02-62 / O-01-64</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--accent-color);">管理の罠:</strong> どちらも脱走時は強力ですが、対処法（ペイル耐性、背後から殴る等）が分かっていれば被害を抑えやすいです。</li>
+                        <li><strong style="color: var(--text-primary);">装備「ジャスティティア」「黄金狂」:</strong> 抽出元はWAWですが、<strong>ALEPHに格上げ</strong>されます。ジャスティティア防具はPALE耐性を持ち、黄金狂武器はRED単発超火力を誇ります。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="reveal" style="margin-bottom: 1rem; color: var(--accent-color);">E.G.O（武器）の評価格付け</h3>
+            <div class="grid-2" style="margin-bottom: 2rem;">
+                <div class="card reveal" style="border-left: 4px solid #4caf50;">
+                    <h4>【最強クラスの優秀な武器】</h4>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong>ホーネット (女王蜂):</strong> <span class="attr-text-red">赤</span> 遠距離。最長射程と超連射。動き回る敵にも安定して当たる<strong>「遠距離武器の結論」</strong>。</li>
+                        <li><strong>抜け殻 (裸の巣):</strong> <span class="attr-text-red">赤</span> 大砲。ヒット時にRED被ダメ1.5倍デバフを付与し、最強クラスの火力貢献。</li>
+                        <li><strong>天国 (地中の天国):</strong> <span class="attr-text-red">赤</span> 槍。射程、前隙、火力、正義補正すべて揃った優等生。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-left: 4px solid #f44336; background: rgba(255, 0, 0, 0.05);">
+                    <h4>【WAWの面汚し（最弱・罠武器）】</h4>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong>阿弥陀 (風雲僧):</strong> <span class="attr-text-black">黒</span> 槍。正義補正が乗らず前隙が異常。TETHにも劣る<strong>全武器中最弱クラス</strong>。</li>
+                        <li><strong>夢中 (夢見る流れ):</strong> <span class="attr-text-black">黒</span> 遠距離。正義補正が乗らずDPSがWAW最下位。攻撃回数バグも抱えています。</li>
+                        <li><strong>魔法の弾丸 (魔弾の射手):</strong> <span class="attr-text-black">黒</span> 貫通。カタログスペックは高いですが、<strong>味方を撃ち抜くフレンドリーファイア</strong>が最大の欠点。集団戦では扱いが困難です。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="reveal" style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 1.2rem;">その他のWAWアブノーマリティ</h3>
             <div class="grid-4">
                 <div class="card reveal"><h3>黒鳥の夢</h3><p>F-02-70</p></div>
                 <div class="card reveal"><h3>不調和</h3><p>O-01-92</p></div>
-                <div class="card reveal"><h3>絶望の騎士</h3><p>O-01-73</p></div>
                 <div class="card reveal"><h3>赤ずきんの傭兵</h3><p>F-01-57</p></div>
                 <div class="card reveal"><h3>大きくて悪いオオカミ</h3><p>F-02-58</p></div>
-                <div class="card reveal"><h3>地中の天国</h3><p>O-04-72</p></div>
                 <div class="card reveal"><h3>次元屈折変異体</h3><p>O-03-88</p></div>
-                <div class="card reveal"><h3>大鳥</h3><p>O-02-40</p></div>
-                <div class="card reveal"><h3>白雪姫のりんご</h3><p>F-04-83</p></div>
                 <div class="card reveal"><h3>ラ・ルナ</h3><p>O-01-64</p></div>
-                <div class="card reveal"><h3>風雲僧</h3><p>T-01-75</p></div>
-                <div class="card reveal"><h3>夢見る流れ</h3><p>T-02-99</p></div>
                 <div class="card reveal"><h3>火の鳥</h3><p>O-02-101</p></div>
                 <div class="card reveal"><h3>寄生樹</h3><p>F-04-83</p></div>
                 <div class="card reveal"><h3>アルリウネ</h3><p>T-04-53</p></div>
-                <div class="card reveal"><h3>憎しみの女王</h3><p>O-01-04</p></div>
-                <div class="card reveal"><h3>裸の巣</h3><p>O-02-74</p></div>
-                <div class="card reveal"><h3>女王蜂</h3><p>T-04-50</p></div>
-                <div class="card reveal"><h3>審判鳥</h3><p>O-02-62</p></div>
-                <div class="card reveal"><h3>貪欲の王</h3><p>O-01-64</p></div>
             </div>
         </section>
 
         <section id="aleph">
             <h2 class="risk-header aleph reveal">ALEPH</h2>
-            <div class="grid-4">
-                <div class="card reveal"><h3>規制済み</h3><p>O-03-89</p></div>
-                <div class="card reveal"><h3>静かなオーケストラ</h3><p>T-01-31</p></div>
-                <div class="card reveal"><h3>溶ける愛</h3><p>D-03-109</p></div>
-                <div class="card reveal"><h3>白夜</h3><p>T-03-46</p></div>
-                <div class="card reveal"><h3>何もない</h3><p>O-06-20</p></div>
-                <div class="card reveal"><h3>笑う死体の山</h3><p>T-01-75</p></div>
-                <div class="card reveal"><h3>蒼星</h3><p>O-03-93</p></div>
-                <div class="card reveal"><h3>終末鳥</h3><p>O-02-63</p></div>
+            <p class="reveal" style="color: var(--text-secondary); margin-bottom: 2rem;">ゲーム内最高危険度であり、一度のミスが施設崩壊や全滅に直結する一方で、ここから得られるE.G.Oはクリアに必須レベルの強力なものばかりです。</p>
+
+            <div class="grid-2">
+                <div class="card reveal">
+                    <h3>何もない</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-06-20</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠:</strong> 「勇気」4未満で失敗続きになり、死亡すると皮を被って擬態します。「正義」4未満で確定脱走。第3形態は300REDダメージの最強近接物理になります。</li>
+                        <li><strong style="color: var(--text-primary);">武器「ミミック」:</strong> <span class="attr-text-red">赤</span> / 大剣。<strong>与ダメージの25%を回復する</strong>最強クラスの近接武器。たまに機能停止するバグあり。</li>
+                        <li><strong style="color: var(--text-primary);">防具「ミミック」:</strong> REDダメージを0.2まで抑える最強のRED特化防具。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--color-red); background: rgba(255, 0, 0, 0.05);">
+                    <span class="attr-tag tag-red">WARNING: 精神汚染</span>
+                    <h3>規制済み (CENSORED)</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-03-89</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠:</strong> 遭遇瞬間に精神力の60%を削る強烈な恐怖ダメージ。高ランクBLACK耐性防具が必須。脱走時は眷属も恐怖を放ちます。</li>
+                        <li><strong style="color: var(--text-primary);">武器「規制済み」:</strong> <span class="attr-text-black">黒</span> / 腕。攻撃力は低いですが<strong>「被ダメージの40%を即座に回復」</strong>するぶっ壊れ能力を持つ最強タンク武器です。（※防具は存在しません）</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>静かなオーケストラ</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">T-01-31</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠:</strong> 良い/悪い結果でカウンターが下がるため<strong>「普通」を出し続ける</strong>シビアな管理が必要。第4楽章に達するとその日のエネルギーを全没収されます。</li>
+                        <li><strong style="color: var(--text-primary);">武器「ダ・カーポ」:</strong> <span class="attr-text-white">白</span> / 鎌。前隙が短く高火力な優等生。</li>
+                        <li><strong style="color: var(--text-primary);">防具「ダ・カーポ」:</strong> WHITE0.2特化ですがPALEが弱点（1.5倍）。ギフトとセットで<strong>WHITEダメージを吸収（回復）</strong>します。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>笑う死体の山</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">T-01-75</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠:</strong> 5人死亡するたびにカウンター減少。試練でのオフィサー死亡に連動するため、処刑弾での事前「お掃除」が必須。脱走時は死体を取り込み高火力のBLACKダメージを撒きます。</li>
+                        <li><strong style="color: var(--text-primary);">武器「笑顔」:</strong> <span class="attr-text-black">黒</span> / ハンマー。敵移動速度を大幅に下げる鈍足デバフが優秀。</li>
+                        <li><strong style="color: var(--text-primary);">防具「笑顔」:</strong> BLACK特化。死体を踏むと回復するおまけ付き。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>蒼星</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-03-93</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠:</strong> 「慎重」4未満でカウンター減少、「自制」3以下で吸い込まれて即死。脱走時のWHITEダメージでSPが0になった職員はパニックにならずそのまま即死（殉教）します。</li>
+                        <li><strong style="color: var(--text-primary);">武器「星の音」:</strong> <span class="attr-text-white">白</span> / 遠距離。残りSPに応じて攻撃回数変動（最大3点バースト）の高火力。</li>
+                        <li><strong style="color: var(--text-primary);">防具「星の音」:</strong> R/W/B耐性0.4、PALE1.0と隙のない万能防具。</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3>溶ける愛</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">D-03-109</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">管理の罠:</strong> 抑圧以外を行うと「粘液（ハート）」を付与。ハート持ちが他職員と同じ部屋にいると感染し、全員がスライム怪物に変貌。<strong>あえて嫌いな「抑圧」を行って回避</strong>するか、隔離運用が必須。脱走時はRED攻撃を吸収（回復）します。</li>
+                        <li><strong style="color: var(--text-primary);">防具「ラブ」:</strong> R/Bが0.3、Wが0.6の超優秀な近接タンク向け防具。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--accent-color);">
+                    <span class="attr-tag" style="background: var(--text-primary); color: #000;">最強クラス</span>
+                    <h3>白夜</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">T-03-46</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--color-red);">脱走時の脅威:</strong> PALE波動を放ち、洗礼を受けた11人を強力な「使徒」に変貌させます。緑の深夜レーザーの利用や第12使徒による特殊鎮圧が有効。</li>
+                        <li><strong style="color: var(--text-primary);">武器「失落園」:</strong> <span class="attr-text-pale">ペイル</span> / 杖。トップの超長射程と範囲攻撃。</li>
+                        <li><strong style="color: var(--text-primary);">防具「失落園」:</strong> 白夜収容中のみ、<strong>一定以下のダメージを完全無効化</strong>する最強耐性を発揮。</li>
+                    </ul>
+                </div>
+                <div class="card reveal" style="border-color: var(--accent-color); grid-column: 1 / -1;">
+                    <span class="attr-tag" style="background: var(--accent-color); color: #fff;">特殊ボス</span>
+                    <h3>終末鳥</h3><p style="font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 0.5rem;">O-02-63</p>
+                    <p>大鳥、罰鳥、審判鳥の3体が脱走時に合体して出現する巨大怪鳥。</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <li><strong style="color: var(--accent-color);">鎮圧のコツ:</strong> 施設内の3つの卵を全て破壊することで鎮圧可能。卵はそれぞれ特定の属性を吸収するため属性管理が必須。</li>
+                        <li><strong style="color: var(--text-primary);">武器「黄昏」:</strong> 1振りで全属性（R/W/B/P）ダメージを叩き出す最強火力。</li>
+                        <li><strong style="color: var(--text-primary);">防具「黄昏」:</strong> 武器・防具・ギフトを揃えると、同室の敵に全属性の持続ダメージを与える恐ろしい効果を発揮します。</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
