@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ストーリー・関連作 | Lobotomy Corporation Wiki</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div class="scanline"></div>
-    <div class="noise"></div>
-    <nav class="main-nav">
+import re
+import glob
+
+nav_html = """<nav class="main-nav">
         <div class="nav-container">
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html">HOME</a></li>
@@ -37,18 +29,19 @@
                 <li class="nav-item"><a href="mods.html">MOD</a></li>
             </ul>
         </div>
-    </nav>
-    <main class="container" style="padding-top: 4rem;">
-        <h1 class="reveal">STORY & SEQUELS</h1>
-        <div class="card reveal" style="margin-top: 2rem;">
-            <h3>Library of Ruina</h3>
-            <p>Lobotomy Corporationの正統続編。</p>
-        </div>
-        <div class="card reveal" style="margin-top: 2rem;">
-            <h3>Limbus Company</h3>
-            <p>最新作のスピンオフ/続編。</p>
-        </div>
-    </main>
-    <script src="main.js"></script>
-</body>
-</html>
+    </nav>"""
+
+files = glob.glob('*.html')
+for file in files:
+    if file == 'abnormality_list.html':
+        continue
+    with open(file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # replace everything between <nav class="main-nav"> and </nav>
+    content = re.sub(r'<nav class="main-nav">.*?</nav>', nav_html, content, flags=re.DOTALL)
+    
+    with open(file, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+print("Nav fixed.")

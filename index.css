@@ -12,7 +12,7 @@
     --color-red: #ff4b4b;
     --color-white: #ffffff;
     --color-black: #404040;
-    --color-pale: #b0d4ff;
+    --color-pale: #00e5ff; /* Cyan/Blue for PALE */
     
     /* Status Colors */
     --color-hp: #ff5e5e;
@@ -224,6 +224,16 @@ body {
     background: rgba(255, 255, 255, 0.02);
 }
 
+.bug-note {
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 50, 50, 0.1);
+    border-left: 3px solid #ff3333;
+    font-size: 0.9rem;
+    color: #ffcccc;
+    border-radius: 0 4px 4px 0;
+}
+
 /* Risk Level Headers */
 .risk-header {
     padding: 0.5rem 1rem;
@@ -240,6 +250,26 @@ body {
 .he { color: #fff45e; border-bottom: 2px solid #fff45e; }
 .waw { color: #d05eff; border-bottom: 2px solid #d05eff; }
 .aleph { color: #ff5e5e; border-bottom: 2px solid #ff5e5e; }
+
+/* Risk Level Text Colors */
+.text-zayin { color: #5effa4; font-weight: bold; font-family: var(--font-mono); }
+.text-teth { color: #5eafff; font-weight: bold; font-family: var(--font-mono); }
+.text-he { color: #fff45e; font-weight: bold; font-family: var(--font-mono); }
+.text-waw { color: #d05eff; font-weight: bold; font-family: var(--font-mono); }
+.text-aleph { color: #ff5e5e; font-weight: bold; font-family: var(--font-mono); }
+
+/* Risk Level Backgrounds */
+.bg-zayin { background: rgba(94, 255, 164, 0.15) !important; border-left: 3px solid #5effa4; }
+.bg-teth { background: rgba(94, 175, 255, 0.15) !important; border-left: 3px solid #5eafff; }
+.bg-he { background: rgba(255, 244, 94, 0.15) !important; border-left: 3px solid #fff45e; }
+.bg-waw { background: rgba(208, 94, 255, 0.15) !important; border-left: 3px solid #d05eff; }
+.bg-aleph { background: rgba(255, 94, 94, 0.15) !important; border-left: 3px solid #ff5e5e; }
+
+/* Half-and-Half Backgrounds for Upgraded Weapons */
+.bg-half-he-waw { background: linear-gradient(135deg, rgba(255, 244, 94, 0.1) 50%, rgba(208, 94, 255, 0.15) 50%) !important; }
+.bg-half-waw-aleph { background: linear-gradient(135deg, rgba(208, 94, 255, 0.1) 50%, rgba(255, 94, 94, 0.15) 50%) !important; }
+.bg-half-he-aleph { background: linear-gradient(135deg, rgba(255, 244, 94, 0.1) 50%, rgba(255, 94, 94, 0.15) 50%) !important; }
+.bg-half-teth-he { background: linear-gradient(135deg, rgba(94, 175, 255, 0.1) 50%, rgba(255, 244, 94, 0.15) 50%) !important; }
 
 /* Attribute Colors in Tables */
 .attr-text-red { color: var(--color-red); font-weight: bold; }
@@ -371,6 +401,25 @@ section {
 .tag-white { background: var(--color-white); color: #000; }
 .tag-black { background: var(--color-black); color: #fff; }
 .tag-pale { background: var(--color-pale); color: #000; }
+
+/* Risk Level Tags */
+.tag-zayin, .tag-teth, .tag-he, .tag-waw, .tag-aleph {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-weight: bold;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: #000;
+    margin: 0.2rem 0.6rem;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+.tag-zayin { background: #00ff00; }
+.tag-teth { background: #0088ff; }
+.tag-he { background: #ffff00; }
+.tag-waw { background: #9900ff; color: #fff; }
+.tag-aleph { background: #ff0000; color: #fff; }
 
 /* Status Meters */
 .meter-container {
